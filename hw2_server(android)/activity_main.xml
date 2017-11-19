@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hw2_server.MainActivity" >
+
+    <TextView
+        android:id="@+id/my_editText1"
+        android:layout_width="match_parent"
+        android:layout_height="400dip" />
+
+    <Button
+        android:id="@+id/my_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="desktop" />
+    
+     <Button
+        android:id="@+id/my_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="otherdev" />
+     
+       <Button
+        android:id="@+id/my_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="store" />
+    
+
+
+</LinearLayout>
