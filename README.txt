@@ -1,28 +1,32 @@
+Odroid_packet_filtering
+
+these project implement packet filtering and testing environment.
+
 1. hw2_client(android)	
 
-android client ÆÄÀÏÀÌ´Ù. ½ÇÇàÇÏ¸é hello world! ÀÌ¿ÜÀÇ Ãâ·ÂÀº ¾Æ¹«°Íµµ ¾øÀ¸³ª,
-thread¿¡¼­ ÀÚµ¿ÀûÀ¸·Î serverName º¯¼ö¿¡ ÇØ´çÇÏ´Â ip·Î ¿¬°áÀ» ÇÏ¿© ÆÐÅ¶À» Àü¼ÛÇÑ´Ù. 
---¸ÕÀú String serverName À» ³»°¡ ¿øÇÏ´Â ¼­¹öÀÇ ip ÁÖ¼Ò·Î º¯°æÇØ¾ß ÇÑ´Ù. 
+android client íŒŒì¼ì´ë‹¤. ì‹¤í–‰í•˜ë©´ hello world! ì´ì™¸ì˜ ì¶œë ¥ì€ ì•„ë¬´ê²ƒë„ ì—†ìœ¼ë‚˜,
+threadì—ì„œ ìžë™ì ìœ¼ë¡œ serverName ë³€ìˆ˜ì— í•´ë‹¹í•˜ëŠ” ipë¡œ ì—°ê²°ì„ í•˜ì—¬ íŒ¨í‚·ì„ ì „ì†¡í•œë‹¤. 
+--ë¨¼ì € String serverName ì„ ë‚´ê°€ ì›í•˜ëŠ” ì„œë²„ì˜ ip ì£¼ì†Œë¡œ ë³€ê²½í•´ì•¼ í•œë‹¤. 
 
 2. hw2_client 
 
-ÀÏ¹Ý desktop¿¡¼­ ½ÇÇà °¡´ÉÇÑ java ÆÄÀÏÀÌ´Ù. ÀÌ ¶ÇÇÑ serverName º¯¼ö¸¦ ³»°¡ ¿øÇÏ´Â ip
-ÁÖ¼Ò·Î ¼¼ÆÃÀ» ÇØ ÁÖ¾î¾ß ÇÑ´Ù.
+ì¼ë°˜ desktopì—ì„œ ì‹¤í–‰ ê°€ëŠ¥í•œ java íŒŒì¼ì´ë‹¤. ì´ ë˜í•œ serverName ë³€ìˆ˜ë¥¼ ë‚´ê°€ ì›í•˜ëŠ” ip
+ì£¼ì†Œë¡œ ì„¸íŒ…ì„ í•´ ì£¼ì–´ì•¼ í•œë‹¤.
 
 3. hw2_server(android)
 
-¼­¹öÀÇ app ÀÌ´Ù. odroid¿¡¼­ ½ÇÇà µÇ¸ç, ´Ù¸¥ ±â±â¿¡¼­ ½ÇÇàÇÏ´õ¶óµµ ¼öÁ¤ÇÒ »çÇ×Àº ¾ø´Ù.
+ì„œë²„ì˜ app ì´ë‹¤. odroidì—ì„œ ì‹¤í–‰ ë˜ë©°, ë‹¤ë¥¸ ê¸°ê¸°ì—ì„œ ì‹¤í–‰í•˜ë”ë¼ë„ ìˆ˜ì •í•  ì‚¬í•­ì€ ì—†ë‹¤.
 
 4. hw2_02.c
 
-¸®´ª½º Ä¿³Î ¸ðµâÀÌ´Ù. LKM¿¡¼­ ³»°¡ ÇÊÅÍ¸µ ÇÒ(server app ¿¡¼­ ¹öÆ°À» ´©¸§À¸·Î¼­ packetÀ» ´õÀÌ»ó µé¾î¿ÀÁö ¾Ê°Ô ÇÒ)
-mac ÁÖ¼Ò¸¦ ¼¼ÆÃ ÇØ ÁÖ¾î¾ß ÇÑ´Ù. line 126Àº desktop ¿¡ ÇØ´çÇÏ´Â mac ÁÖ¼Ò¸¦ ±âÀÔÇÏ°í line 140¿¡´Â ¶Ç´Ù¸¥ ±â±â¿¡ ´ëÇÑ
-macÁÖ¼Ò¸¦ ±âÀÔÇÑ ÈÄ¿¡, ÄÄÆÄÀÏ, insmod ÇÏ¸é µÈ´Ù. 
+ë¦¬ëˆ…ìŠ¤ ì»¤ë„ ëª¨ë“ˆì´ë‹¤. LKMì—ì„œ ë‚´ê°€ í•„í„°ë§ í• (server app ì—ì„œ ë²„íŠ¼ì„ ëˆ„ë¦„ìœ¼ë¡œì„œ packetì„ ë”ì´ìƒ ë“¤ì–´ì˜¤ì§€ ì•Šê²Œ í• )
+mac ì£¼ì†Œë¥¼ ì„¸íŒ… í•´ ì£¼ì–´ì•¼ í•œë‹¤. line 126ì€ desktop ì— í•´ë‹¹í•˜ëŠ” mac ì£¼ì†Œë¥¼ ê¸°ìž…í•˜ê³  line 140ì—ëŠ” ë˜ë‹¤ë¥¸ ê¸°ê¸°ì— ëŒ€í•œ
+macì£¼ì†Œë¥¼ ê¸°ìž…í•œ í›„ì—, ì»´íŒŒì¼, insmod í•˜ë©´ ëœë‹¤. 
 
 5.hw2_02.ko
 
-³» pc ¿Í ³» ÈÞ´ëÆùÀÇ mac ÁÖ¼Ò¸¦ ÇÊÅÍ¸µ ÇÔÀ¸·Î ÀÇ¹Ì°¡ ¾ø´Â ÆÄÀÏÀÌ´Ù. ÇÏÁö¸¸ Ã·ºÎÇÑ´Ù. 
+ë‚´ pc ì™€ ë‚´ íœ´ëŒ€í°ì˜ mac ì£¼ì†Œë¥¼ í•„í„°ë§ í•¨ìœ¼ë¡œ ì˜ë¯¸ê°€ ì—†ëŠ” íŒŒì¼ì´ë‹¤. í•˜ì§€ë§Œ ì²¨ë¶€í•œë‹¤. 
 
 6.result
 
-ÇÊÅÍ¸µ °á°úÀÇ console ³»¿ëÀÌ´Ù.
+í•„í„°ë§ ê²°ê³¼ì˜ console ë‚´ìš©ì´ë‹¤.
